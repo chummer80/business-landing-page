@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******************************* END RESET *****************************/
+
+* {
+	outline: 0px dotted black;
+}
+
+html {
+}
+
+body {
+	background-color: gray;
+	position: absolute;
+	font-family: sans-serif;
+	width: 100%;
+	min-width: 80em;
+	
+	background: url(images/recordplayer.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header {
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	height: 8em;
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, maroon 0%, firebrick 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, maroon 0%, firebrick 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, maroon 0%, firebrick 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, maroon), color-stop(1, firebrick));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, maroon 0%, firebrick 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, maroon 0%, firebrick 100%);
+}
+
+
+
+#logo_container {
+	text-align: center;
+	font-weight: bold;
+}
+
+#logo_image {
+	height: 6em;
+}
+
+#slogan {
+	font-size: 1.3em;
+}
+
+.header_link {
+	margin: 1em;
+	color: white;
+	text-decoration: none;
+}
+
+#navbar {
+	height: 2em;
+	background-color: firebrick;
+	text-align: center;
+	padding: 1em;
+}
+
+.nav_bar_link {
+	text-decoration: none;
+	text-shadow:2px 2px black;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	margin: 2em;
+}
+
+.nav_bar_link:hover {
+	color: gray;
+}
+
+.nav_bar_link:active {
+	position: relative;
+	top: 1px;
+}
+
+#description_section {
+	width: 65em;
+	margin-top: 4em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30em;
+	border: 0.5em solid darkred;
+	border-radius: 5em;
+	background-color: white;
+	padding: 1em;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#records_image {
+	width: 100%;
+}
+
+.description_text {
+	font-size: 2em;
+	margin: 1.5em;
+	color: darkred;
+}
